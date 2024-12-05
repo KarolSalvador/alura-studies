@@ -1,11 +1,11 @@
 import React from 'react';
 import Botao from '../Botao'
 import style from './Formulario.module.scss';
-import { Itarefa } from '../../types/tarefas';
+import { ITarefa } from '../../types/tarefas';
 import { v4 as uuidv4 } from 'uuid';
 
 class Formulario extends React.Component<{
-    setTarefas: React.Dispatch<React.SetStateAction<Itarefa[]>>
+    setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>
 }> {
     state = {
         tarefa: "",
